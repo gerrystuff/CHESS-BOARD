@@ -4,11 +4,11 @@ export default class Board {
         this.element.classList.add('board');
 
         if(dimensions){
-            this.element.style.width= `${dimensions.width}px`;
-            this.element.style.height = `${dimensions.height}px`;
+            this.element.style.width= dimensions.width;
+            this.element.style.height = dimensions.height;
         } else {
-            this.element.style.width= '100%';
-            this.element.style.height = '100%';
+            this.element.style.width= `100vmin`;
+            this.element.style.height = `100vmin`;
         }
         
     }
