@@ -1,4 +1,19 @@
 .board{
-    border:6px solid red;
-
+    outline: 30px solid black;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap:0.5em;
 }
+
+.square{
+    font-size: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.black{
+    background:black;
+    color:white;
+}
+
